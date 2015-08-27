@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>VK Analytic</title>
+
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/Chart.js/Chart.js"></script>
+    <script src="bower_components/angular-chart.js/angular-chart.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css.map"/>
+    <link rel="stylesheet" href="bower_components/angular-chart.js/dist/angular-chart.css">
+
+
+    <script src="app.js"></script>
+    <script src="app/controllers/AppController.js"></script>
+</head>
+<body ng-controller="AppController" >
+<canvas id="radar" class="chart chart-radar" data="data"
+        labels="labels"></canvas>
+</body>
+</html>
