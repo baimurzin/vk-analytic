@@ -9,14 +9,24 @@
 
 
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/Chart.js/Chart.js"></script>
-    <script src="bower_components/angular-chart.js/angular-chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <script src="//cdn.jsdelivr.net/angular.chartjs/latest/angular-chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">-->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css.map"/>
-    <link rel="stylesheet" href="bower_components/angular-chart.js/dist/angular-chart.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/angular.chartjs/latest/angular-chart.css">
 
 
     <script src="app.js"></script>
@@ -25,5 +35,15 @@
 <body ng-controller="AppController" >
 <canvas id="radar" class="chart chart-radar" data="data"
         labels="labels"></canvas>
+
+<canvas id="bar" class="chart chart-bar"
+        chart-data="data" chart-labels="labels">
+</canvas>
+
+
+<canvas id="line" class="chart chart-line" chart-data="data"
+        chart-labels="labels" chart-legend="true" chart-series="series"
+        chart-click="onClick" >
+</canvas>
 </body>
 </html>
